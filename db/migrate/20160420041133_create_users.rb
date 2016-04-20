@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.integer :telefone
       t.integer :matricula
-      t.integer :cpf , :limit => 8
+      t.string :cpf
 
       t.timestamps null: false
     end
