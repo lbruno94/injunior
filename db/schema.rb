@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 20160420042116) do
     t.string   "email"
     t.integer  "telefone"
     t.integer  "matricula"
-    t.integer  "cpf"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.integer  "cpf",             limit: 8
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
     t.string   "password_digest"
   end
 

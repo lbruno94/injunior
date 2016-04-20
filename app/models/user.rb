@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   before_save { self.email = email.downcase }
-  validates :cpf, presence: true, length: { is: 11 }
+  validates :cpf, presence: true
   validates :nome, presence: true, length: { maximum: 32 }
   validates :matricula, presence: true
   validates :telefone, presence: true, length: { maximum: 9 }
